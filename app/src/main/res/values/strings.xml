@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">VSGA 2024</string>
+    <string name="masukkan_nama_anda">Masukkan Nama Anda:</string>
+    <string name="name">Name</string>
+    <string name="tampilkan">Tampilkan</string>
 </resources>
