@@ -1,7 +1,11 @@
 package com.nisa.vsga2024;
 
+import static com.nisa.vsga2024.R.string.nama_anda;
+
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -31,6 +35,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showName(View view) {
-        textNama.setText(getString(R.string.nama_anda, inputNama.getText()));
+        textNama.setText(getString(nama_anda, inputNama.getText()));
     }
 }

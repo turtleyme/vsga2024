@@ -3,4 +3,5 @@
     <string name="masukkan_nama_anda">Masukkan Nama Anda:</string>
     <string name="name">Name</string>
     <string name="tampilkan">Tampilkan</string>
+    <string name="nama_anda">Nama Anda: %s </string>
 </resources>
