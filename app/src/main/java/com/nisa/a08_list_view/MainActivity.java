@@ -1,6 +1,10 @@
 package com.nisa.a08_list_view;
 
 import android.os.Bundle;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +13,28 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+
+    ListView listView;
+    String[] nama = new String[] {
+            "Indonesia",
+            "Malaysia",
+            "Singapura",
+            "Thailand",
+            "Filipina",
+            "Brunei Darussalam",
+            "Timor Leste",
+            "Vietnam",
+            "Papua Nugini",
+            "Afganistan",
+            "Afrika Selatan",
+            "Aljazair",
+            "Arab Saudi",
+            "Argentina",
+            "Australia",
+            "Bangladesh",
+            "Belgia",
+            "Brazil"
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +46,19 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        listView = findViewById(R.id.listView);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(
+                this,
+                android.R.layout.simple_list_item_1,
+                android.R.id.text1,
+                nama
+        );
+        listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener((parent, view, position, id) ->
+                Toast.makeText(MainActivity.this, nama[position] + " diklik",
+                        Toast.LENGTH_LONG).show());
+
     }
 }
