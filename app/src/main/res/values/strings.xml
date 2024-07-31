@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">VSGA 2024</string>
+    <string name="tambah_catatan">Tambah catatan</string>
+    <string name="nama_file">Nama file:</string>
+    <string name="isi_catatan">Isi catatan:</string>
+    <string name="simpan">Simpan</string>
+    <string name="nama_file_tidak_boleh_kosong">Nama file tidak boleh kosong</string>
+    <string name="isi_catatan_tidak_boleh_kosong">Isi catatan tidak boleh kosong</string>
+    <string name="catatan_berhasil_disimpan">Catatan berhasil disimpan!</string>
+    <string name="gagal_menyimpan_catatan">Gagal menyimpan catatan!</string>
+    <string name="judul_utama">Catatan</string>
+    <string name="enter_nama_file">Masukkan nama file</string>
+    <string name="enter_isi_catatan">Masukkan isi catatan</string>
+</resources>
